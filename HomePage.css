@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    /* Reset default margin */
+}
+
+/* Sidebar navigation */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c66c23;
+    overflow-x: hidden;
+    padding-top: 150px;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.six h1 {
+    text-align: center;
+    color:#222; font-size:30px; font-weight:400;
+    text-transform: uppercase;
+    word-spacing: 1px; letter-spacing:2px; color:#c50000;
+  }
+  .six h1 span {
+    line-height:2em; padding-bottom:15px;
+    text-transform: none;
+    font-size:.7em;
+    font-weight: normal;
+    font-style: italic; font-family: "Playfair Display","Bookman",serif;
+    color:#e22b2b; letter-spacing:-0.005em; word-spacing:1px;
+    letter-spacing:none;
+  }
+  .six h1:after, .six h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 4px;
+    content: "";
+    right: 45px; 
+    margin:auto;
+    background-color: #ccc;
+  }
+  .six h1:before { 
+  background-color:#d78b8b;
+    left:45px; width:90px;
+  }
+.title-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.background-container {
+    background-image: url('DSCF2345.0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.title-surname {
+    font-size: 72px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    color: #c06014;
+    margin-top: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.title-details {
+    font-size: 24px;
+    /* Adjust size as needed */
+    font-weight: normal;
+    color: #666666;
+    /* Lighter grey for the details */
+}
+
+.profile-pic-container {
+    padding: 10px;
+    background-color: #333;
+    /* Use the same color as your sidebar */
+    z-index: 0;
+}
+
+/* Style sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    /* Adjust color as needed */
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+    /* Adjust hover color as needed */
+}
+
+/* Style for the title area */
+.title-area {
+    margin-left: 250px;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img-thumbnail {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    background-color: #6c757d;
+    /* This is Bootstrap's secondary color, change as needed */
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.badge {
+    width: 75px;
+    margin-right: 10px;
+}
+
+
+/* Adjust this to match your color scheme */
+.bg-primary {
+    background-color: #c06014 !important;
+}
+
+/* Additional styling below */
+.main-content {
+    margin-left: 250px;
+    /* Same as the width of the sidebar */
+    padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+        display: block;
+    }
+
+    .title-area,
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* education css */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    list-style: none;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(34, 34, 86);
+    /* Use the desired color */
+}
+
+.timeline-content {
+    margin-left: 40px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
+/* This is for the line connecting the dots */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgb(34, 34, 86);
+    /* Use the desired color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100vh;
+    margin-top: 1rem;
+    /* Adjust as needed, smaller values reduce space */
+    padding-top: 0;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.education-section {
+    text-align: center;
+    /* Centers the text within the section */
+}
+
+.title-areaED {
+    margin-left: 50px;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* Adjust as needed, smaller values reduce space */
+    padding-bottom: 0.5rem;
+}

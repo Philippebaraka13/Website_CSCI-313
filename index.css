@@ -1,0 +1,131 @@
+.nine h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nine h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+ 
+  .box {
+    width: 300px;
+    border-bottom: 20px solid #c06014;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  .box h2 {
+    color: #fff;
+    background: #c06014;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .box ul {
+    position: relative;
+    background: #fff;
+  }
+  .box ul:hover li {
+    opacity: 0.2;
+  }
+  .box ul li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+  }
+  .box ul li:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    background: #c06014;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 1;
+  }
+  .box ul li span {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #c06014;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+  }
+  .box ul li:hover span {
+    background: #fff;
+    color: #25bcff;
+  }
+ 
+  .bg-primary {
+    background-color: #c06014 !important;
+}
+.container {
+    display: flex; /* This enables flexbox */
+    justify-content: space-between; /* This will space out your two .box divs */
+    align-items: flex-start; /* This aligns items to the top */
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stacks the .box divs vertically on smaller screens */
+    }
+    .box {
+      width: 100%; /* Makes each box take full width on smaller screens */
+      margin-bottom: 1rem; /* Adds some space below each box */
+    }
+  }
+  .nined h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nined h1 span {
+    margin-top: 5px;
+      font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nined h1 span:after,.nined h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  
